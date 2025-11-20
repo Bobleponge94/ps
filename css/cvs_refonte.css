@@ -1,0 +1,17 @@
+/*****************************************************************************************
+ LE STYLE EST DANS LA TOOLBOX
+*****************************************************************************************/
+
+/* On force la hauteur du body en Auto pour le FrameResizer */
+.tb-user-connected{
+	height: auto;
+}
+
+[data-image="il_transverse_404"]{
+	background: url('%URL_TOOLBOX%/il_transverse_404.svg') no-repeat center;
+	background-size: contain;
+}
+[data-image="il_divers_simplicity"]{
+	background: url('%URL_TOOLBOX%/il_divers_simplicity.svg') no-repeat center;
+	background-size: contain;
+}
